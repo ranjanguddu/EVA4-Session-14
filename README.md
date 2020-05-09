@@ -11,7 +11,7 @@ A special focus has been laid on to handling such massive size of data efficient
 ## Starting with..
 ### Background  
 <p float="left">
-  <img src="/img1.png" width="100" />
-  <img src="/img2.png" width="100" /> 
-  <img src="/img3.png" width="100" />
+  <img src="/background/S_50.jpg" width="100" />
+  <img src="/background.S_54.jpg" width="100" /> 
+  <img src="/background.S_73.jpg" width="100" />
 </p>
