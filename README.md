@@ -17,6 +17,8 @@ Background contains pictures of empty roads of all sorts, ranging from city road
 * Image format: jpg - We take a special care to avoid png format here in order to save space.  
 * Number of Images: 115  
 * Folder size: 1.06MB
+* Background mean: [0.4056645395930562, 0.40100307446352884, 0.39399309587970394]
+* Background std: [0.25793691468858726, 0.2594673166338195, 0.27366606302821606]
 
 <p float="left">
   <img src="/background/S_50.jpg" width="150" />
@@ -35,6 +37,8 @@ Foreground contains object as car on a transparent background in all possible or
 * Image format: png - preserves the alpha channel(transparency)
 * Number of Images: 200 (100 non-flipped + 100 horizontal flipped)
 * Folder Size: 2.17MB
+* Foreground mean: [0.2094951758817645, 0.19539478564017493, 0.19461715970327925]
+* Foreground std: [0.2836906317489486, 0.2668295825763676, 0.26662684995218194]
 
 <p float="left">
   <img src="/foreground/Car_0.png" width="100" />
