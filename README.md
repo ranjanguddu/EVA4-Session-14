@@ -31,7 +31,7 @@ Foreground contains object as car on a transparent background in all possible or
 <b>Specifications</b>  
 1. Image dimensions: varies from 94px to 120px (aspect ratio maintained to fit background)
 2. No.of channels: 4
-3. Image format: png - png preserves the alpha channel(transparency)
+3. Image format: png - preserves the alpha channel(transparency)
 4. Number of Images: 200 (100 non-flipped + 100 horizontal flipped)
 
 <p float="left">
@@ -40,4 +40,8 @@ Foreground contains object as car on a transparent background in all possible or
   <img src="/foreground/Car_23.png" width="100" />
   <img src="/foreground/Car_186.png" width="100" />
   <img src="/foreground/Car_75.png" width="100" />
-</p>
+</p>  
+
+### Masks
+<b>Foreground </b>
+
