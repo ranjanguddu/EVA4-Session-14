@@ -12,6 +12,8 @@ A special focus has been laid on to handling such massive size of data efficient
 ### Background  
 <p float="left">
   <img src="/background/S_50.jpg" width="100" />
-  <img src="/background.S_54.jpg" width="100" /> 
-  <img src="/background.S_73.jpg" width="100" />
+  <img src="/background/S_54.jpg" width="100" /> 
+  <img src="/background/S_73.jpg" width="100" />
+  <img src="/background/S_102.jpg" width="100" />
+  <img src="/background/S_52.jpg" width="100" />
 </p>
