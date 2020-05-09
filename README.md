@@ -72,4 +72,22 @@ This gives a total of 115\*200\*20 = 4,60,000 images.
 
 Here's a peek into few of our images:  
 
+<p float="left">
+  <img src="/fg_bg/P_1.jpg" width="150" />
+  <img src="/fg_bg/P_172126.jpg" width="150" />
+  <img src="/fg_bg/P_100071.jpg" width="150" />
+  <img src="/fg_bg/P_148576.jpg" width="150" />
+  <img src="/fg_bg/P_156303.jpg" width="150" />
+</p>
 
+### Corresponding fg_bg Masks  
+These masks are created by overlaying the foreground masks on a black patch of size equal to background image's size.  
+The corresponding masks are:  
+
+<p float="left">
+  <img src="/fg_bg_mask/mask_1.jpg" width="150" />
+  <img src="/fg_bg_mask/mask_170203.jpg" width="150" />
+  <img src="/fg_bg_mask/mask_100071.jpg" width="150" />
+  <img src="/fg_bg_mask/mask_289786.jpg" width="150" />
+  <img src="/fg_bg_mask/mask_156303.jpg" width="150" />
+</p>
