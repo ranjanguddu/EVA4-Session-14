@@ -12,7 +12,7 @@ A special focus has been laid on handling such massive sized data efficiently wi
 ### Background  
 Background contains pictures of empty roads of all sorts, ranging from city roads to flyovers. 
 
-<b>Specifications (Statistics)</b>  
+<b>Statistics</b>  
 * Image dimensions: 224\*224 pixels  
 * Image format: jpg - We take a special care to avoid png format here in order to save space.  
 * Number of Images: 115  
@@ -31,7 +31,7 @@ Background contains pictures of empty roads of all sorts, ranging from city road
 ### Foreground  
 Foreground contains object as car on a transparent background in all possible orientations.  
 
-<b>Specifications (Statistics)</b>  
+<b>Statistics</b>  
 * Image dimensions: varies from 94px to 120px (aspect ratio maintained to fit background)
 * No.of channels: 4
 * Image format: png - preserves the alpha channel(transparency)
@@ -53,7 +53,7 @@ Foreground contains object as car on a transparent background in all possible or
 
 ### Foreground Mask
 Foreground masks have been created using the alpha channel of the png images  
-<b>Specifications (Statistics)</b>
+<b>Statistics</b>
 * Image format: jpg
 * Number of channels: 1
 * Number of Images: 200
@@ -75,7 +75,7 @@ Foreground masks have been created using the alpha channel of the png images
 ### Fg_Bg Together: OverLayed Images  
 Foreground objects are overlayed on each background image at 20 random positions.  
 This gives a total of 115\*200\*20 = 4,60,000 images.  
-<b>Specifications (Statistics)</b>  
+<b>Statistics</b>  
 * Image dimensions: 224\*224\*3
 * No.of channels: 3
 * Image format: jpg - saves space as we don't need the transparency(alpha) channel here.
