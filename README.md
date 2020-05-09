@@ -16,6 +16,7 @@ Background contains pictures of empty roads of all sorts, ranging from city road
 1. Image dimensions: 224\*224 pixels  
 2. Image format: jpg - We take a special care to avoid png format here in order to save space.  
 3. Number of Images: 115  
+4. Folder size: 1.06MB
 
 <p float="left">
   <img src="/background/S_50.jpg" width="150" />
@@ -33,6 +34,7 @@ Foreground contains object as car on a transparent background in all possible or
 2. No.of channels: 4
 3. Image format: png - preserves the alpha channel(transparency)
 4. Number of Images: 200 (100 non-flipped + 100 horizontal flipped)
+5. Folder Size: 2.17MB
 
 <p float="left">
   <img src="/foreground/Car_0.png" width="100" />
@@ -45,6 +47,29 @@ Foreground contains object as car on a transparent background in all possible or
   <img src="/foreground/Car_83.png" width="100" />
 </p>  
 
-### Masks
-<b>Foreground </b>
+### Foreground Mask
+Foreground masks have been created using the alpha channel of the png images  
+<b>Specifications</b>
+1. Image format: jpg
+2. Number of channels: 1
+3. Number of Images: 200
+4. Folder size: 400KB  
+
+<p float="left">
+  <img src="/fg_mask/Car_0_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_73_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_23_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_186_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_75_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_19_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_70_mask.jpg" width="100" />
+  <img src="/fg_mask/Car_83_mask.jpg" width="100" />
+</p>  
+
+### Fg_Bg Together: OverLayed Images  
+Foreground objects are overlayed on each background image at 20 random positions.  
+This gives a total of 115\*200\*20 = 4,60,000 images.  
+
+Here's a peek into few of our images:  
+
 
