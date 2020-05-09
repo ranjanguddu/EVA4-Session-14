@@ -74,7 +74,7 @@ Here's a peek into few of our images:
 
 <p float="left">
   <img src="/fg_bg/P_1.jpg" width="150" />
-  <img src="/fg_bg/P_172126.jpg" width="150" />
+  <img src="/fg_bg/P_206074.jpg" width="150" />
   <img src="/fg_bg/P_100071.jpg" width="150" />
   <img src="/fg_bg/P_148576.jpg" width="150" />
   <img src="/fg_bg/P_156303.jpg" width="150" />
@@ -86,8 +86,18 @@ The corresponding masks are:
 
 <p float="left">
   <img src="/fg_bg_mask/mask_1.jpg" width="150" />
-  <img src="/fg_bg_mask/mask_172126.jpg" width="150" />
+  <img src="/fg_bg_mask/mask_206074.jpg" width="150" />
   <img src="/fg_bg_mask/mask_100071.jpg" width="150" />
   <img src="/fg_bg_mask/mask_148576.jpg" width="150" />
   <img src="/fg_bg_mask/mask_156303.jpg" width="150" />
 </p>
+
+### Corresponding Depth Maps
+<p float="left">
+  <img src="/Depth maps/depth_P_1.jpg" width="150" />
+  <img src="/Depth maps/depth_206074.jpg" width="150" />
+  <img src="/Depth maps/depth_P_100071.jpg" width="150" />
+  <img src="/Depth maps/depth_100792.jpg" width="150" />
+  <img src="/Depth maps/depth_156303.jpg" width="150" />
+</p>
+
