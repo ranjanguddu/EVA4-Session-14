@@ -10,10 +10,34 @@ A special focus has been laid on to handling such massive size of data efficient
 
 ## Starting with..
 ### Background  
+Background contains pictures of empty roads of all sorts, ranging from city roads to flyovers. 
+
+<b>Specifications</b>  
+1. Image dimensions: 224\*224 pixels  
+2. Image format: jpg - We take a special care to avoid png format here in order to save space.  
+3. Number of Images: 115  
+
 <p float="left">
   <img src="/background/S_50.jpg" width="150" />
   <img src="/background/S_3.jpg" width="150" /> 
   <img src="/background/S_73.jpg" width="150" />
   <img src="/background/S_102.jpg" width="150" />
   <img src="/background/S_57.jpg" width="150" />
+</p>
+
+### Foreground  
+Foreground contains object as car on a transparent background in all possible orientations.  
+
+<b>Specifications</b>  
+1. Image dimensions: varies from 94px to 120px (aspect ratio maintained to fit background)
+2. No.of channels: 4
+3. Image format: png - png preserves the alpha channel(transparency)
+4. Number of Images: 200 (100 non-flipped + 100 horizontal flipped)
+
+<p float="left">
+  <img src="/foreground/Car_0.png" width="100" />
+  <img src="/foreground/Car_73.png" width="100" /> 
+  <img src="/foreground/Car_23.png" width="100" />
+  <img src="/foreground/Car_186.png" width="100" />
+  <img src="/foreground/Car_157.png" width="100" />
 </p>
