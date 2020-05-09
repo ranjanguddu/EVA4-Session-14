@@ -58,6 +58,8 @@ Foreground masks have been created using the alpha channel of the png images
 * Number of channels: 1
 * Number of Images: 200
 * Folder size: 400KB  
+* Fg_Mask Mean : 0.4901594366127988
+* Fg_Mask Std: 0.48846756739825214
 
 <p float="left">
   <img src="/fg_mask/Car_0_mask.jpg" width="100" />
@@ -95,14 +97,14 @@ Here's a peek into few of our images:
 
 ### Fg_Bg Masks  
 These masks are created by overlaying the foreground masks on a black patch with size equal to background image's size.  
-<b>Specifications (Statistics)</b>  
+<b>Statistics</b>  
 * Image dimensions: 224\*224\*1
 * No.of channels: 1
 * Image format: jpg - saves space as we don't need the transparency(alpha) channel here.
 * Number of Images: 4,60,000
 * Folder Size: 723MB
-* Dataset Mask Mean: [0.40456055804985874, 0.3983824357134671, 0.3925343274986984]
-* Dataset Mask Std: [0.2599649396912192, 0.2609780929820059, 0.27395228266780175]  
+* Dataset Mask Mean: 0.07221486453923726
+* Dataset Mask Std: 0.2556922185275919 
 
 The corresponding masks are:  
 
@@ -114,7 +116,21 @@ The corresponding masks are:
   <img src="/fg_bg_mask/mask_156303.jpg" width="150" />
 </p>
 
-### Fg_Bg Depth Maps
+### Fg_Bg Depth Maps  
+Our Monocular Depth Estimation Maps have been produced using a pre-trained DenseNet-201 model, cloned from [this](https://github.com/ialhashim/DenseDepth) repo with minor modifications. Our modifications mainly include scaling up of each image during processing to get a better view and hence a better prediction of depth for each object. The images are loaded at size 224x224, scaled up to 640x480 during processing, and then scaled down back to 224x224 before saving.  
+Lack of a Depth camera or a LIDAR camera leads us to rely on pretrained DenseNet-201 model to create depth maps.  
+
+<b>Statistics</b>  
+* Image dimensions: 224\*224\*1
+* No.of channels: 1
+* Image format: jpg - saves space as we don't need the transparency(alpha) channel here.
+* Number of Images: 400,000
+* Folder Size: 723MB
+* Depth Map Mean: 0.3955709002351957
+* Depth Map Std: 0.26238287425746376  
+
+Here's a glimpse of the depth maps generated:
+
 <p float="left">
   <img src="/Depth maps/depth_P_1.jpg" width="150" />
   <img src="/Depth maps/depth_206074.jpg" width="150" />
@@ -122,5 +138,4 @@ The corresponding masks are:
   <img src="/Depth maps/depth_100792.jpg" width="150" />
   <img src="/Depth maps/depth_156303.jpg" width="150" />
 </p>  
-
 
