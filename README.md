@@ -39,5 +39,5 @@ Foreground contains object as car on a transparent background in all possible or
   <img src="/foreground/Car_73.png" width="100" /> 
   <img src="/foreground/Car_23.png" width="100" />
   <img src="/foreground/Car_186.png" width="100" />
-  <img src="/foreground/Car_157.png" width="100" />
+  <img src="/foreground/Car_75.png" width="100" />
 </p>
