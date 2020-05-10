@@ -1,4 +1,4 @@
-# S14-15: Creation of A Very Large Dataset
+# S14: Creation of A Very Large Dataset
 
 This Repo explains how you can, not just use available datasets in your journey of DNN but efficiently create them yourself.
 
@@ -15,10 +15,10 @@ Background contains pictures of empty roads of all sorts, ranging from city road
 <b>Statistics</b>  
 * Image dimensions: 224\*224 pixels  
 * Image format: jpg - We take a special care to avoid png format here in order to save space.  
-* Number of Images: 115  
-* Folder size: 1.06MB
-* Background mean: [0.4056645395930562, 0.40100307446352884, 0.39399309587970394]
-* Background std: [0.25793691468858726, 0.2594673166338195, 0.27366606302821606]
+* Number of Images: 100 
+* Folder size: 2.1 MB
+* Background mean: [0.4066298566301917, 0.4002413496649073, 0.39249680184578123]
+* Background std: [0.2516888771733121, 0.25270893840650427, 0.2627707634116584]
 
 <p float="left">
   <img src="/background/S_50.jpg" width="150" />
@@ -35,10 +35,10 @@ Foreground contains object as car on a transparent background in all possible or
 * Image dimensions: varies from 94px to 120px (aspect ratio maintained to fit background)
 * No.of channels: 4
 * Image format: png - preserves the alpha channel(transparency)
-* Number of Images: 200 (100 non-flipped + 100 horizontal flipped)
-* Folder Size: 2.17MB
-* Foreground mean: [0.2094951758817645, 0.19539478564017493, 0.19461715970327925]
-* Foreground std: [0.2836906317489486, 0.2668295825763676, 0.26662684995218194]
+* Number of Images: 100
+* Folder Size: 1.2 MB
+* Foreground mean:[0.20949517588176447, 0.19539478564017485, 0.19461715970327936]
+* Foreground std: [0.28369063174894876, 0.2668295825763676, 0.26662684995218183]
 
 <p float="left">
   <img src="/foreground/Car_0.png" width="100" />
@@ -56,10 +56,10 @@ Foreground masks have been created using the alpha channel of the png images
 <b>Statistics</b>
 * Image format: jpg
 * Number of channels: 1
-* Number of Images: 200
-* Folder size: 400KB  
-* Fg_Mask Mean : 0.4901594366127988
-* Fg_Mask Std: 0.48846756739825214
+* Number of Images: 100
+* Folder size: 135 KB 
+* Fg_Mask Mean : 0.4901193707128269
+* Fg_Mask Std: 0.4889552830051992
 
 <p float="left">
   <img src="/fg_mask/Car_0_mask.jpg" width="100" />
@@ -74,15 +74,15 @@ Foreground masks have been created using the alpha channel of the png images
 
 ### Fg_Bg Together: OverLayed Images  
 Foreground objects are overlayed on each background image at 20 random positions.  
-This gives a total of 115\*200\*20 = 4,60,000 images.  
+This gives a total of 100\*200\*20 = 4,60,000 images.  
 <b>Statistics</b>  
 * Image dimensions: 224\*224\*3
 * No.of channels: 3
 * Image format: jpg - saves space as we don't need the transparency(alpha) channel here.
-* Number of Images: 4,60,000
-* Folder Size: 4.96GB
-* Dataset Mean: [0.40456055804985874, 0.3983824357134671, 0.3925343274986984]
-* Dataset Std: [0.2599649396912192, 0.2609780929820059, 0.27395228266780175]
+* Number of Images: 4,00,000
+* Folder Size: 1.92 GB
+* Dataset Mean: [0.406589950038055, 0.3974733626335778, 0.3922238309037007]
+* Dataset Std: [0.2537575580108365, 0.2544099256403426, 0.26358312983854404]
 
 
 Here's a peek into few of our images:  
@@ -101,10 +101,10 @@ These masks are created by overlaying the foreground masks on a black patch with
 * Image dimensions: 224\*224\*1
 * No.of channels: 1
 * Image format: jpg - saves space as we don't need the transparency(alpha) channel here.
-* Number of Images: 4,60,000
+* Number of Images: 4,00,000
 * Folder Size: 723MB
-* Dataset Mask Mean: 0.07221486453923726
-* Dataset Mask Std: 0.2556922185275919 
+* Dataset Mask Mean: 0.06884130386902756
+* Dataset Mask Std: 0.25071680302352883
 
 The corresponding masks are:  
 
@@ -125,9 +125,9 @@ Lack of a Depth camera or a LIDAR camera leads us to rely on pretrained DenseNet
 * No.of channels: 1
 * Image format: jpg - saves space as we don't need the transparency(alpha) channel here.
 * Number of Images: 400,000
-* Folder Size: 723MB
-* Depth Map Mean: 0.3955709002351957
-* Depth Map Std: 0.26238287425746376  
+* Folder Size: 1.02 GB
+* Depth Map Mean: 0.38157365288360556
+* Depth Map Std: 0.25473305512119443  
 
 Here's a glimpse of the depth maps generated:
 
