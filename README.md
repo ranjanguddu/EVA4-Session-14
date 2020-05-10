@@ -1,5 +1,14 @@
 # S14: Creation of A Very Large Dataset
 
+Datset is availbale here: https://drive.google.com/drive/folders/1b8foIfcz1OSpFTSxbMqBSvdqwOtVqC5l
+
+<b>Entire Dataset is divided into 10 batches, each having size of 40K imagaes.</b> <br/>
+There are two folders here:
+1. DATA_IMAGE_MASK.zip : Here all the fg_bg images and their masks are present.
+2. Depth_IMAGE_DATA.zip: Here the depth images of the above fg_bg images are present. <br />
+
+
+
 This Repo explains how you can, not just use available datasets in your journey of DNN but efficiently create them yourself.
 
 ## Description  
@@ -30,6 +39,7 @@ Background contains pictures of empty roads of all sorts, ranging from city road
 
 ### Foreground  
 Foreground contains object as car on a transparent background in all possible orientations.  
+
 
 <b>Statistics</b>  
 * Image dimensions: varies from 94px to 120px (aspect ratio maintained to fit background)
